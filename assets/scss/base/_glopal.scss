@@ -1,0 +1,92 @@
+html {
+  overflow-x: hidden !important;
+}
+
+.container {
+  position: relative;
+
+  width: 95%; /* Set the container to 100% of its parent element */
+  max-width: 1200px; /* Set a maximum width for the container */
+  margin: 0 auto; /* Center the container on the page */
+  padding: 20px; /* Add padding inside the container */
+  box-sizing: border-box; /* Include padding and border in the container's total width */
+
+  /* Example of media query for smaller screens */
+  @media (max-width: 768px) {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  /* Example of media query for even smaller screens */
+  @media (max-width: 480px) {
+    padding: 5px; /* Further adjust padding for very small screens */
+  }
+}
+
+.dp__main {
+  height: 57px;
+  margin-bottom: 30px;
+
+  .dp__input_wrap {
+    height: 57px;
+
+    input {
+      height: 57px;
+      background: var(--input_bg);
+      border: 1px solid var(--border);
+      color: var(--main);
+
+      &::placeholder {
+        color: var(--main);
+      }
+    }
+  }
+}
+
+body {
+  background: var(--body_bg);
+  color: var(--main);
+  font-size: 17px;
+  line-height: 1.7;
+  font-family: "KoHo", sans-serif;
+  overflow-x: hidden;
+
+  svg.icon {
+    font-size: 23px;
+    cursor: pointer;
+    transition: all 0.1s linear;
+    outline: none;
+  }
+
+  a,
+  a:link,
+  a:visited,
+  a:hover,
+  a:active,
+  a:focus {
+    text-decoration: unset;
+    color: var(--main);
+  }
+
+  img,
+  video {
+    object-fit: cover;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .v-badge {
+    display: block;
+    line-height: unset;
+
+    .v-badge__wrapper {
+      display: block;
+
+      .v-badge__badge {
+      }
+    }
+  }
+}
